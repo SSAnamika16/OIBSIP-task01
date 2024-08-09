@@ -1,0 +1,334 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.main{
+    background-image: url("assets/images/backg.jpg");
+    position:relative;
+    height:70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);    /* zoom effect */
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-color: rgb(12, 8, 8);
+}
+
+.main .box{
+    height:70vh;
+    width:100%;
+    opacity:0.69;
+    position:absolute;
+    top:0;
+    background-color: black;
+}
+
+nav{
+    max-width: 60vh;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height:62px; */
+    height: 100px;
+}
+
+nav img{
+    color:rgb(251, 19, 19);
+    width:130px;
+    position:relative;
+    z-index:10;
+}
+
+nav button{
+    position:relative;
+    z-index:10;
+}
+
+.hero{
+    display: flex;
+     height: calc(100% - 100px); /* eski parent ki height set h too eski height ham % me set kar skte h*/
+     align-items: center;
+     color:white;
+     justify-content: center;
+     flex-direction: column;
+     position:relative;
+     font-family: 'Poppins' , sans-serif;
+     gap:23px;
+     padding:0 30px;
+     font-family: 'Martel Sans', sans-serif;
+}
+
+.hero> :nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align:center;
+}
+
+.hero> :nth-child(2){
+    font-weight:400;
+    font-size: 24px;
+    text-align:center;
+}
+
+.hero> :nth-child(3){
+    font-weight:400;
+    font-size: 20px;
+    text-align:center;
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(47, 45, 45);
+    position: relative; 
+     z-index: 20;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.021);
+    color:white;
+    border-radius:4px;
+    border: 1px solid white;
+    cursor:pointer;
+
+}
+
+.btn-red{
+    background-color: red;
+    color:white;
+    padding:3px 24px;
+    font-size:20px;
+    border-radius:4px;
+    font-weight:400;
+   }
+
+.btn-red-sm{
+ background-color: red;
+ color:white;
+}
+
+.hero-button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+}
+
+.main input{
+    color:white;
+    padding:7px 101px 8px 14px;
+    font-size:12px;
+    font-weight: 900;
+    border-radius:4px;
+    background-color: rgba(23,23,23, 0.7);
+    border: 1px solid rgba(110, 107, 107, 0.5);
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width:70vw;
+    margin:auto;
+    color:white;
+    align-items: center;
+}
+
+.seclast-button {
+    /* align-items:center;
+    justify-content: center; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+}
+
+
+.secImg{
+    position:relative;
+
+}
+
+.secImg img{
+    /* width:30vw; */
+    width:555px;
+    position:relative;
+    z-index:10;
+}
+
+.secImg video{
+    position: absolute;
+    width:555px;
+    top:51px;
+    right:0;
+}
+
+section.first > div{
+    display:flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first > div :first-child{
+    font-size:48px;
+    font-weight:bolder;
+}
+
+section.first > div :nth-child(2){
+    font-size:24px;
+    /* font-weight:bolder; */
+}
+
+.faq{
+    background-color: black;
+    color:white;
+    padding:34px;
+    
+
+}
+
+.faq h2{
+    text-align:center;
+    font-size:48px;
+}
+
+.faqbox{
+    transition: all 1s ease-out;
+  font-size:22px;
+  display:flex;
+  background-color:#2d2d2d;
+  padding:16px;
+  color:white;
+  max-width: 60vw;
+  margin: 14px auto;
+  justify-content: space-between;
+  cursor:pointer;
+}
+
+.faqbox svg{
+    filter: invert(1);
+}
+
+.faqbox:hover{
+    background-color: #414141;
+}
+
+/*  */
+.seclast-button{
+   color:white;
+}
+.seclast-button span{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+/*  */
+
+footer{
+    color:white;
+    max-width: 60vw;
+    margin:auto;
+    padding: 14px;
+}
+
+footer .Questions{
+    padding: 34px 0;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+  
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        max-width:90vw;
+    }
+
+    .first{
+        flex-wrap:wrap;
+    }
+
+    .secImg img{
+          width: 305px;  
+    }
+
+    .secImg video{
+        width:305px;
+    }
+
+    .hero> :nth-child(1){
+        font-size: 32px;
+    }
+
+    .hero :nth-child(2){
+        font-size: 18px;
+    }
+
+    .hero :nth-child(3){
+        font-size: 18px;
+    }
+
+    .hero-button{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:16px;
+    }
+
+    .faq h2{
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer{
+        max-width:90vw;
+    }
+
+    .footer-item{
+        align-items:center;
+    }
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:25px;
+    }
+}
+
+.footer a {
+    /* text-decoration: none; */
+    color: white;
+    font-size:14px;
+
+}
+
+.footer-item{
+    display:flex;
+    flex-direction:column;
+    gap:23px;
+}
+
+.btn:hover{
+    background-color: rgb(211, 146, 146);
+}
